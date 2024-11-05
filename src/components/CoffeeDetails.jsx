@@ -39,7 +39,7 @@ const CoffeeDetails = () => {
   // Toggle favorite status
   const handleFavoriteClick = () => {
     const success = addFavorite(coffee);
-    if (success) setIsFavorite(true); // Set favorite status only if successfully added
+    if (success) setIsFavorite(true);
   };
 
   return (

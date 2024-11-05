@@ -3,7 +3,7 @@ import { useLoaderData, useParams, useNavigate } from "react-router-dom";
 import CoffeeCard from "./CoffeeCard";
 
 const CoffeeCards = () => {
-  const navigate = useNavigate(); // Initialize navigate
+  const navigate = useNavigate();
   const data = useLoaderData();
   const { category } = useParams();
   const [coffees, setCoffees] = useState([]);
@@ -16,7 +16,7 @@ const CoffeeCards = () => {
         );
         setCoffees(filterByCategory);
       } else {
-        setCoffees(data.slice(0, 6)); // Show only the first 6 items by default
+        setCoffees(data.slice(0, 6));
       }
     }
   }, [category, data]);

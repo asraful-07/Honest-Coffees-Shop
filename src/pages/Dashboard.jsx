@@ -7,7 +7,7 @@ const Dashboard = () => {
   useEffect(() => {
     // Retrieve favorites from local storage
     const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-    setCoffees(favorites); // Set favorites to the coffees state
+    setCoffees(favorites);
   }, []);
 
   return (
