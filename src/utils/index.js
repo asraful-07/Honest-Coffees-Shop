@@ -9,10 +9,10 @@ const addFavorite = (coffee) => {
     favorites.push(coffee);
     localStorage.setItem("favorites", JSON.stringify(favorites));
     toast.success("Successfully added to favorites!");
-    return true; // Indicate success
+    return true;
   } else {
     toast.error("This coffee is already in favorites!");
-    return false; // Indicate failure
+    return false;
   }
 };
 
